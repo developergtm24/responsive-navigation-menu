@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Bootstrap Fullscreen Menu via Modal</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:400,700,300'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+ 
+<div class='modal fade modal-fullscreen-menu' id='modalNavigation' role='dialog' tabindex='-1'>
+  <button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+    <span class='sr-only'>Close navigation</span>
+    <span class='glyphicon glyphicon-remove'></span>
+  </button>
+  <div class='modal-dialog'>
+    <nav class='list-group'>
+      <a class='list-group-item' href='#'>Home</a>
+      <a class='list-group-item' href='#'>Services</a>
+      <a class='list-group-item' href='#'>Meet the Team</a>
+      <a class='list-group-item' href='#'>Careers</a>
+      <a class='list-group-item' href='#'>Contact Us</a>
+    </nav>
+  </div>
+</div>
+<div class='jumbotron text-center'>
+  <div class='container'>
+ 
+    <button class='btn btn-primary btn-lg' data-target='#modalNavigation' data-toggle='modal' type='button'>
+      Open Navigation
+    </button>
+  </div>
+</div>
+<!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+</body>
+</html>
